@@ -1,5 +1,6 @@
 # nocheckin
 Jonathan Blow style git pre-commit hook
+
 Reject commits that add lines including the word "nocheckin"
 
 ### usage
