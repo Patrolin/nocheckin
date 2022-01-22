@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# prevent commits that add files containing "nocheckin"
+# reject commits that add lines including the word "nocheckin"
 git diff HEAD -i --diff-filter=d -G nocheckin
 exit $(git diff HEAD -i --diff-filter=d -G nocheckin --name-only | wc -l)
 
-# vscode is dumb and thinks the commit suceededs, even if there is an error...
+# vscode is dumb and thinks the commit succeedes, even if there is an error...
